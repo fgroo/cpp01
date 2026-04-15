@@ -8,6 +8,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC += main.cpp
 SRC += Zombie.cpp
+SRC += zombieHorde.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

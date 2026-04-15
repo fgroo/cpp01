@@ -3,12 +3,9 @@
 NAME = zombie
 
 CPP = c++
-
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC += main.cpp
-SRC += Zombie.cpp
-
+SRC = main.cpp Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all : $(NAME)
@@ -16,11 +13,13 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
+%.o : %.cpp
+	$(CPP) $(CPPFLAGS) -c $< -o $@
+
 clean :
 	rm -f $(OBJ)
-	rm -f *.gch
+
 fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
-

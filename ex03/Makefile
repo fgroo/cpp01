@@ -7,7 +7,9 @@ CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC += main.cpp
-SRC += Zombie.cpp
+SRC += Weapon.cpp
+SRC += HumanA.cpp
+SRC += HumanB.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -23,4 +25,3 @@ fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
-
