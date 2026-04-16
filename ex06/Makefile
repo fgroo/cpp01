@@ -6,7 +6,8 @@ CPP = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC += main.cpp 
+SRC += Harl.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

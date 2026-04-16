@@ -6,17 +6,16 @@
 /*   By: fgroo <student@42.eu>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 23:07:10 by fgroo             #+#    #+#             */
-/*   Updated: 2026/04/16 13:07:06 by fgroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 13:39:40 by fgroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int main(void) {
+int main(int ac, char **av) {
+	if (ac != 2)
+		return (1);
 	Harl harl;
-	harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
+	harl.complain(std::string(av[1]));
 	return (0);
 }
