@@ -6,7 +6,7 @@
 /*   By: fgroo <student@42.eu>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 23:07:10 by fgroo             #+#    #+#             */
-/*   Updated: 2026/04/16 13:02:01 by fgroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 13:07:06 by fgroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,5 @@ int main(void) {
 	harl.complain("INFO");
 	harl.complain("WARNING");
 	harl.complain("ERROR");
-	harl.complain("INVALID");
-	// harl.complain(2);
-	// harl.complain(2.0);
-	// harl.complain('a');
-	// harl.complain(true);
-	// harl.complain(-1);
-	// harl.complain(27283585649439);
 	return (0);
 }

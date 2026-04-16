@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgroo <student@42.eu>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/15 23:07:10 by fgroo             #+#    #+#             */
-/*   Updated: 2026/04/16 13:02:01 by fgroo            ###   ########.fr       */
+/*   Created: 2026/04/15 22:58:49 by fgroo             #+#    #+#             */
+/*   Updated: 2026/04/15 23:49:50 by fgroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#ifndef HARL_HPP
+# define HARL_HPP
 
-int main(void) {
-	Harl harl;
-	harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
-	harl.complain("INVALID");
-	// harl.complain(2);
-	// harl.complain(2.0);
-	// harl.complain('a');
-	// harl.complain(true);
-	// harl.complain(-1);
-	// harl.complain(27283585649439);
-	return (0);
-}
+# include <string>
+# include <iostream>
+
+class Harl {
+	public:
+		void	complain( std::string level );
+	private : 
+		void	debug( void );
+		void	info( void );
+		void	warning( void );
+		void	error( void );
+};
+
+#endif
