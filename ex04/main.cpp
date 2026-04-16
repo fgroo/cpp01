@@ -6,7 +6,7 @@
 /*   By: fgroo <student@42.eu>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 17:01:23 by fgroo             #+#    #+#             */
-/*   Updated: 2026/04/15 22:31:01 by fgroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 14:03:35 by fgroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,9 @@ int main(int ac, char **av)
 		return (1);
 
 	std::string s1 = av[2], s2 = av[3];
+	if (s1.empty())
+		return (1);
+
 	std::ifstream file(av[1]);
 	if (!file.is_open())
 		return (1);
